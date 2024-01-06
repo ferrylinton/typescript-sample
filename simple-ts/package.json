@@ -1,0 +1,20 @@
+{
+  "name": "simple-ts",
+  "version": "1.0.0",
+  "description": "Simple Typescript",
+  "main": "./dist/index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && npx tsc",
+    "start": "node ./dist/index.js",
+    "dev": "ts-node ./src/index.ts"
+  },
+  "keywords": ["typescript"],
+  "author": "ferrylinton",
+  "license": "ISC",
+  "devDependencies": {
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
